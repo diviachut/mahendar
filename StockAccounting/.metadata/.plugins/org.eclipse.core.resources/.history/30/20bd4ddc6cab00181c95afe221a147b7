@@ -1,0 +1,5 @@
+Browser = Chrome
+URL = http://kosmiktechnologies.com/seleniumLiveProject/inventory/login.php
+search.box = .//*[@id='psearch']
+search.btn = .//*[@id='btnsubmit']
+

@@ -1,0 +1,23 @@
+package CommonFunctionLibrary;
+
+import java.io.IOException;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import Utilities.PropertyFileUtil;
+
+public class FunctionLibrary {
+	public static WebDriver startBrowser(WebDriver driver) throws Throwable, Throwable
+	{
+			driver = new FirefoxDriver();
+		}
+		else
+			if(PropertyFileUtil.getValueforkey("Browser").equalsIgnoreCase("Chrome"))
+			{
+				System.setProperty("webdriver.chrome.driver", "CommonjarFiles/chromedriver.exe");
+				driver = new ChromeDriver();
+			}
+	}
+
+}
